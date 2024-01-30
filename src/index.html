@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<title>Positivus</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__inner container">
+				<h1 class="visually-hidden">Главный заголовок</h1>
+				<a href="#" class="header__logo logo">
+					<img
+						src="./assets/images/logo.svg"
+						alt="Logo"
+						width="220"
+						height="36"
+						loading="lazy"
+					/>
+				</a>
+				<nav class="header__menu hidden-mobile">
+					<ul class="menu-list">
+						<li class="menu-item">
+							<a href="#" class="header__menu-link">item link menu</a>
+						</li>
+						<li class="menu-item">
+							<a href="#" class="header__menu-link">item link menu</a>
+						</li>
+						<li class="menu-item">
+							<a href="#" class="header__menu-link">item link menu</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="header__button button hidden-mobile" type="button">
+					button
+				</button>
+
+				<button
+					class="header__burger-menu berger-button visible-mobile"
+					type="button"
+					onclick="mobileOverlay.showModal()"
+				>
+					<span class="visually-hidden">Open navigation menu</span>
+				</button>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section">
+				<div class="section__inner container">
+					<h2 class="section__title">Заголовок секции</h2>
+					Section content
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section__inner container">
+					<h2 class="section__title">Заголовок секции</h2>
+					Section content
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__inner container">footer</div>
+		</footer>
+
+		<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+			<form class="mobile-overlay__closw-button-wrapper" method="dialog">
+				<button class="mobile-overlay__close-button cross-button" type="submit">
+					<span class="visually-hidden">Close navigation menu</span>
+				</button>
+			</form>
+			Menu
+		</dialog>
+
+		<script type="module" src="./assets/js/main.js"></script>
+	</body>
+</html>
