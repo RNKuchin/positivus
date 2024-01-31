@@ -13,27 +13,36 @@
 				<a href="#" class="header__logo logo">
 					<img
 						src="./assets/images/logo.svg"
-						alt="Logo"
+						alt="Logo Positivus"
 						width="220"
 						height="36"
 						loading="lazy"
 					/>
 				</a>
 				<nav class="header__menu hidden-mobile">
-					<ul class="menu-list">
-						<li class="menu-item">
-							<a href="#" class="header__menu-link">item link menu</a>
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a href="#" class="header__menu-link">About us</a>
 						</li>
-						<li class="menu-item">
-							<a href="#" class="header__menu-link">item link menu</a>
+						<li class="header__menu-item">
+							<a href="#" class="header__menu-link">Services</a>
 						</li>
-						<li class="menu-item">
-							<a href="#" class="header__menu-link">item link menu</a>
+						<li class="header__menu-item">
+							<a href="#" class="header__menu-link">Use Cases</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#" class="header__menu-link">Pricing</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#" class="header__menu-link">Blog</a>
 						</li>
 					</ul>
 				</nav>
-				<button class="header__button button hidden-mobile" type="button">
-					button
+				<button
+					class="header__button button button--transparent hidden-mobile"
+					type="button"
+				>
+					Request a quote
 				</button>
 
 				<button
@@ -47,9 +56,82 @@
 		</header>
 		<main class="main">
 			<section class="section">
-				<div class="section__inner container">
-					<h2 class="section__title">Заголовок секции</h2>
-					Section content
+				<div class="hero container">
+					<h1 class="hero__title">
+						Navigating the digital landscape for success
+					</h1>
+					<div class="hero__left-content">
+						<div class="hero__description">
+							<p>
+								Our digital marketing agency helps businesses grow and succeed
+								online through a range of services including SEO, PPC, social
+								media marketing, and content creation.
+							</p>
+						</div>
+						<button class="button hero__button" type="button">
+							Book a consultation
+						</button>
+					</div>
+					<div class="hero__right-content"></div>
+					<div class="hero__partners">
+						<h2 class="visually-hidden">Our partners</h2>
+						<ul class="hero__partners-list">
+							<li class="hero__partners-item">
+								<img
+									src="assets/images/partners/amazon.svg"
+									alt="amazon"
+									width="130"
+									height="48"
+									loading="lazy"
+								/>
+							</li>
+							<li class="hero__partners-item">
+								<img
+									src="assets/images/partners/dribble.svg"
+									alt="dribble"
+									width="130"
+									height="48"
+									loading="lazy"
+								/>
+							</li>
+							<li class="hero__partners-item">
+								<img
+									src="assets/images/partners/hubspot.svg"
+									alt="hubspot"
+									width="130"
+									height="48"
+									loading="lazy"
+								/>
+							</li>
+							<li class="hero__partners-item">
+								<img
+									src="assets/images/partners/netflix.svg"
+									alt="netflix"
+									width="130"
+									height="48"
+									loading="lazy"
+								/>
+							</li>
+							<li class="hero__partners-item">
+								<img
+									src="assets/images/partners/notion.svg"
+									alt="notion"
+									width="130"
+									height="48"
+									loading="lazy"
+								/>
+							</li>
+							<li class="hero__partners-item">
+								<img
+									src="assets/images/partners/zoom.svg"
+									alt="zoom"
+									width="130"
+									height="48"
+									loading="lazy"
+								/>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 
@@ -66,12 +148,30 @@
 		</footer>
 
 		<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
-			<form class="mobile-overlay__closw-button-wrapper" method="dialog">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
 				<button class="mobile-overlay__close-button cross-button" type="submit">
 					<span class="visually-hidden">Close navigation menu</span>
 				</button>
 			</form>
-			Menu
+			<div class="mobile-overlay__body">
+				<ul class="mobile-overlay__list">
+					<li class="mobile-overlay__item">
+						<a href="#" class="mobile-overlay__link">About us</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="#" class="mobile-overlay__link">Services</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="#" class="mobile-overlay__link">Use Cases</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="#" class="mobile-overlay__link">Pricing</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="#" class="mobile-overlay__link">Blog</a>
+					</li>
+				</ul>
+			</div>
 		</dialog>
 
 		<script type="module" src="./assets/js/main.js"></script>

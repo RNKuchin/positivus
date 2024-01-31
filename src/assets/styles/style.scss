@@ -1,1 +1,4 @@
 @import 'normalize', 'fonts', 'mixins', 'media', 'variables', 'utils', 'globals';
+
+@import 'blocks/button', 'blocks/burger-button', 'blocks/header',
+	'blocks/mobile-overlay', 'blocks/section', 'blocks/hero';

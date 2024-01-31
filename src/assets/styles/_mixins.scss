@@ -2,6 +2,10 @@
 	font-size: clamp(#{$min}px, #{calc($max / 1440) * 100}vw, #{$max}px);
 }
 
+@mixin width-clamp($min: 16, $max: 48) {
+	width: clamp(#{$min}px, #{calc($max / 1440) * 100}vw, #{$max}px);
+}
+
 @mixin reset-link {
 	color: inherit;
 
